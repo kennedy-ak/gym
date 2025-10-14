@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Blog - Green Street Gym{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="bg-gym-green text-white py-5">
+    <div class="container text-center">
+        <h1 class="display-5 fw-bold mb-2">Health & Wellness Blog</h1>
+        <p class="lead">Expert tips, articles, and insights for your health journey</p>
+    </div>
+</section>
+
+<!-- Blog List -->
+<section class="py-5">
+    <div class="container">
+        {% if blogs %}
+            <div class="row g-4">
+                {% for blog in blogs %}
+                <div class="col-md-6 col-lg-4">
+                    <div class="card blog-card">
+                        {% if blog.featured_image %}
+                        <img src="{{ blog.featured_image.url }}" class="card-img-top" alt="{{ blog.title }}">
+                        {% else %}
+                        <div class="bg-gym-green text-white d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <i class="bi bi-journal-text" style="font-size: 4rem;"></i>
+                        </div>
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title text-gym-green">
+                                <a href="{% url 'blog:detail' blog.slug %}" class="text-decoration-none text-gym-green">
+                                    {{ blog.title }}
+                                </a>
+                            </h5>
+                            <p class="card-text text-muted">
+                                {{ blog.excerpt|default:blog.content|truncatewords:20 }}
+                            </p>
+                            <div class="blog-meta mb-3">
+                                <i class="bi bi-person me-1"></i>{{ blog.author.username }}
+                                <span class="mx-2">"</span>
+                                <i class="bi bi-calendar3 me-1"></i>{{ blog.published_at|date:"M d, Y" }}
+                            </div>
+                            <a href="{% url 'blog:detail' blog.slug %}" class="btn btn-gym-green">
+                                Read More <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-info text-center py-5">
+                        <i class="bi bi-info-circle fs-1 mb-3 d-block"></i>
+                        <h4>No blog posts available yet</h4>
+                        <p class="mb-0">Check back soon for health and wellness tips!</p>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

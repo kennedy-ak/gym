@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ blog.title }} - Green Street Gym{% endblock %}
+
+{% block content %}
+<!-- Blog Header -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-gym-green">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'blog:list' %}" class="text-gym-green">Blog</a></li>
+                        <li class="breadcrumb-item active">{{ blog.title|truncatewords:5 }}</li>
+                    </ol>
+                </nav>
+
+                <h1 class="display-5 fw-bold text-gym-green mb-3">{{ blog.title }}</h1>
+
+                <div class="blog-meta mb-4">
+                    <span class="me-3">
+                        <i class="bi bi-person-circle me-1 text-gym-orange"></i>
+                        <strong>{{ blog.author.username }}</strong>
+                    </span>
+                    <span class="me-3">
+                        <i class="bi bi-calendar3 me-1 text-gym-orange"></i>
+                        {{ blog.published_at|date:"F d, Y" }}
+                    </span>
+                    <span>
+                        <i class="bi bi-clock me-1 text-gym-orange"></i>
+                        {{ blog.content|wordcount|floatformat:0 }} words
+                    </span>
+                </div>
+
+                {% if blog.featured_image %}
+                <div class="mb-4">
+                    <img src="{{ blog.featured_image.url }}" class="img-fluid rounded shadow" alt="{{ blog.title }}">
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Content -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4 p-lg-5">
+                        <div class="blog-content" style="line-height: 1.8; font-size: 1.1rem;">
+                            {{ blog.content|linebreaks }}
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <small class="text-muted">Last updated: {{ blog.updated_at|date:"F d, Y" }}</small>
+                            </div>
+                            <div>
+                                <a href="{% url 'blog:list' %}" class="btn btn-outline-success">
+                                    <i class="bi bi-arrow-left me-2"></i>Back to Blog
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="card bg-gym-green text-white mt-4">
+                    <div class="card-body p-4 text-center">
+                        <h4 class="mb-3">Ready to Transform Your Health?</h4>
+                        <p class="mb-3">Join Green Street Gym today and start your wellness journey!</p>
+                        {% if user.is_authenticated %}
+                            <a href="{% url 'dashboard:home' %}" class="btn btn-gym-orange btn-lg">
+                                Go to Dashboard
+                            </a>
+                        {% else %}
+                            <a href="{% url 'accounts:register' %}" class="btn btn-gym-orange btn-lg">
+                                Register Now
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

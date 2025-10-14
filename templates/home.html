@@ -1,0 +1,356 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - Green Street Gym{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container hero-content">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0 fade-in-up">
+                <h1 class="display-4 fw-bold mb-4">Life and Health @ Green Street</h1>
+                <p class="lead mb-4">Your journey to wellness starts here. Professional fitness training, rehabilitation, and wellness services all in one place.</p>
+                <div class="d-flex gap-3">
+                    <a href="{% url 'accounts:register' %}" class="btn btn-gym-orange btn-lg">Get Started</a>
+                    <a href="{% url 'blog:list' %}" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-4">
+                    <h3 class="mb-3">Opening Hours</h3>
+                    <p class="fs-5"><i class="bi bi-clock me-2"></i> 5am - 9am / 5pm - 9pm</p>
+                    <h3 class="mt-4 mb-3">Contact Us</h3>
+                    <p class="mb-2"><i class="bi bi-telephone me-2"></i> 0288251997</p>
+                    <p class="mb-2"><i class="bi bi-telephone me-2"></i> 0244236973</p>
+                    <p><i class="bi bi-geo-alt me-2"></i> Pantang Hospital Second Gate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="text-gym-green fw-bold">Our Services</h2>
+            <p class="text-muted">Comprehensive health and wellness solutions</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card h-100">
+                    <div class="card-body">
+                        <div class="mb-3 text-gym-orange">
+                            <i class="bi bi-heart-pulse fs-1"></i>
+                        </div>
+                        <h5 class="card-title">Pain Management</h5>
+                        <p class="card-text">Professional pain management techniques to help you live pain-free and comfortable.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card h-100">
+                    <div class="card-body">
+                        <div class="mb-3 text-gym-orange">
+                            <i class="bi bi-hand-thumbs-up fs-1"></i>
+                        </div>
+                        <h5 class="card-title">Massage Therapy</h5>
+                        <p class="card-text">Deep tissue massage and therapeutic massage services for complete relaxation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card h-100">
+                    <div class="card-body">
+                        <div class="mb-3 text-gym-orange">
+                            <i class="bi bi-bandaid fs-1"></i>
+                        </div>
+                        <h5 class="card-title">Injury Rehabilitation</h5>
+                        <p class="card-text">Specialized rehabilitation programs to help you recover and regain strength.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card h-100">
+                    <div class="card-body">
+                        <div class="mb-3 text-gym-purple">
+                            <i class="bi bi-lightning fs-1"></i>
+                        </div>
+                        <h5 class="card-title">Stroke Rehabilitation</h5>
+                        <p class="card-text">Expert care and therapy for stroke recovery and rehabilitation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card h-100">
+                    <div class="card-body">
+                        <div class="mb-3 text-gym-brown">
+                            <i class="bi bi-spa fs-1"></i>
+                        </div>
+                        <h5 class="card-title">Reflexology</h5>
+                        <p class="card-text">Traditional reflexology therapy for holistic health and wellbeing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card h-100">
+                    <div class="card-body">
+                        <div class="mb-3 text-gym-purple">
+                            <i class="bi bi-activity fs-1"></i>
+                        </div>
+                        <h5 class="card-title">Weight Management</h5>
+                        <p class="card-text">Personalized weight management and fitness programs to achieve your goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Gym Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="text-gym-green fw-bold mb-4">About Green Street Gym</h2>
+                <p class="lead text-muted">Your Premier Health and Wellness Destination</p>
+                <p>Green Street Gym is your one-stop destination for comprehensive health, fitness, and wellness services. Located at Pantang Hospital Second Gate, we combine modern fitness equipment with traditional therapeutic treatments to provide holistic care for your body and mind.</p>
+                <p>Whether you're looking to build strength, recover from injury, manage pain, or simply maintain a healthy lifestyle, our team of certified professionals is here to guide you every step of the way.</p>
+                <a href="{% url 'pricing' %}" class="btn btn-gym-purple btn-lg mt-3">
+                    <i class="bi bi-tag me-2"></i>View Our Pricing
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <div class="card bg-gym-green text-white border-0 shadow-lg">
+                    <div class="card-body p-5">
+                        <h4 class="fw-bold mb-4">What We Offer</h4>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-check-circle-fill fs-4 me-3"></i>
+                                    <span>Modern Equipment</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-check-circle-fill fs-4 me-3"></i>
+                                    <span>Certified Trainers</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-check-circle-fill fs-4 me-3"></i>
+                                    <span>Therapy Services</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-check-circle-fill fs-4 me-3"></i>
+                                    <span>Home Services</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-check-circle-fill fs-4 me-3"></i>
+                                    <span>Pain Management</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-check-circle-fill fs-4 me-3"></i>
+                                    <span>Rehabilitation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Facilities Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="text-gym-purple fw-bold">Our Facilities & Equipment</h2>
+            <p class="text-muted">State-of-the-art equipment and comfortable treatment rooms</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3 text-gym-purple">
+                            <i class="bi bi-dumbbell fs-1"></i>
+                        </div>
+                        <h5 class="card-title text-gym-green">Gym Equipment</h5>
+                        <p class="card-text text-muted">Modern cardio machines, free weights, and resistance training equipment for all fitness levels.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3 text-gym-brown">
+                            <i class="bi bi-flower3 fs-1"></i>
+                        </div>
+                        <h5 class="card-title text-gym-green">Therapy Rooms</h5>
+                        <p class="card-text text-muted">Comfortable, private rooms for massage therapy, reflexology, and rehabilitation services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3 text-gym-orange">
+                            <i class="bi bi-house-heart fs-1"></i>
+                        </div>
+                        <h5 class="card-title text-gym-green">Mobile Service</h5>
+                        <p class="card-text text-muted">Professional equipment and therapists available for home and corporate visits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-gym-green fw-bold text-center mb-5">Why Choose Green Street Gym?</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="text-center p-4">
+                    <div class="mb-3">
+                        <div class="rounded-circle bg-gym-purple text-white d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="bi bi-award fs-1"></i>
+                        </div>
+                    </div>
+                    <h5 class="text-gym-green fw-bold">Experienced Team</h5>
+                    <p class="text-muted">Certified trainers and licensed therapists with years of experience in health and wellness.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="text-center p-4">
+                    <div class="mb-3">
+                        <div class="rounded-circle bg-gym-orange text-white d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="bi bi-clock-history fs-1"></i>
+                        </div>
+                    </div>
+                    <h5 class="text-gym-green fw-bold">Flexible Hours</h5>
+                    <p class="text-muted">Open 5am-9am and 5pm-9pm to fit your busy schedule before or after work.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="text-center p-4">
+                    <div class="mb-3">
+                        <div class="rounded-circle bg-gym-teal text-white d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="bi bi-cash-coin fs-1"></i>
+                        </div>
+                    </div>
+                    <h5 class="text-gym-green fw-bold">Affordable Rates</h5>
+                    <p class="text-muted">Quality health services at competitive prices accessible to everyone.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="text-center p-4">
+                    <div class="mb-3">
+                        <div class="rounded-circle bg-gym-green text-white d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="bi bi-geo-alt fs-1"></i>
+                        </div>
+                    </div>
+                    <h5 class="text-gym-green fw-bold">Convenient Location</h5>
+                    <p class="text-muted">Easily accessible at Pantang Hospital Second Gate with ample parking space.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials/Stats Section -->
+<section class="py-5 bg-gym-purple text-white">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md-3">
+                <div class="p-3">
+                    <h2 class="display-4 fw-bold mb-2">500+</h2>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-3">
+                    <h2 class="display-4 fw-bold mb-2">8+</h2>
+                    <p class="mb-0">Services Offered</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-3">
+                    <h2 class="display-4 fw-bold mb-2">10+</h2>
+                    <p class="mb-0">Expert Therapists</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-3">
+                    <h2 class="display-4 fw-bold mb-2">100%</h2>
+                    <p class="mb-0">Satisfaction Rate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-gym-green text-white">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-3">Ready to Start Your Fitness Journey?</h2>
+        <p class="lead mb-4">Join Green Street Gym today and transform your health and wellness</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="{% url 'pricing' %}" class="btn btn-gym-orange btn-lg">
+                <i class="bi bi-tag me-2"></i>View Pricing
+            </a>
+            <a href="{% url 'accounts:register' %}" class="btn btn-outline-light btn-lg">
+                <i class="bi bi-person-plus me-2"></i>Register Now
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Additional Info -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h3 class="text-gym-green fw-bold mb-3">Home, Office & Corporate Services Available</h3>
+                <p class="text-muted">We bring our professional services to you! Whether at home or in your office, our team is ready to provide quality health and wellness services at your convenience.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-gym-green me-2"></i> Flexible scheduling</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-gym-green me-2"></i> Professional equipment</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-gym-green me-2"></i> Certified therapists</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-gym-green me-2"></i> Customized programs</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <h5 class="card-title text-gym-green mb-3">Why Choose Us?</h5>
+                        <p class="card-text">At Green Street Gym, we combine traditional healing methods with modern fitness techniques to provide comprehensive wellness solutions.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mb-2"><i class="bi bi-star-fill text-gym-orange me-2"></i> Experienced professionals</li>
+                            <li class="mb-2"><i class="bi bi-star-fill text-gym-orange me-2"></i> State-of-the-art facilities</li>
+                            <li class="mb-2"><i class="bi bi-star-fill text-gym-orange me-2"></i> Personalized care</li>
+                            <li class="mb-2"><i class="bi bi-star-fill text-gym-orange me-2"></i> Affordable rates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,354 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Pricing - Green Street Gym{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="bg-gym-purple text-white py-5">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-3">Our Pricing</h1>
+        <p class="lead">Affordable rates for quality health and wellness services</p>
+        <p class="mb-0"><small>Note: Prices are subject to changes</small></p>
+    </div>
+</section>
+
+<!-- Pricing Content -->
+<section class="py-5">
+    <div class="container">
+        <!-- Gym & In-House Services -->
+        <div class="mb-5">
+            <h2 class="text-gym-green text-center mb-4 fw-bold">Gym & In-House Services</h2>
+            <p class="text-center text-muted mb-5">Visit us at Pantang Hospital Second Gate for these services</p>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card pricing-card featured">
+                        <div class="featured-badge">Popular</div>
+                        <div class="pricing-header purple">
+                            <div class="pricing-title">Gym Registration</div>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">GHC</span> 450.00
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Full gym access</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Professional equipment</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Flexible hours (5am-9am / 5pm-9pm)</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Certified trainers</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Personalized workout plans</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="{% url 'dashboard:booking_form' %}?service=gym_registration" class="btn btn-gym-purple">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card pricing-card">
+                        <div class="pricing-header green">
+                            <div class="pricing-title">Full Body Massage</div>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">GHC</span> 350.00
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Deep tissue massage</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Relaxation therapy</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Professional therapist</li>
+                                <li><i class="bi bi-check-circle-fill"></i> 1 hour session</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Stress relief</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="{% url 'dashboard:booking_form' %}?service=full_body_massage" class="btn btn-gym-green">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card pricing-card">
+                        <div class="pricing-header teal">
+                            <div class="pricing-title">Neck & Shoulder Pain</div>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">GHC</span> 250.00
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Targeted treatment</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Pain relief therapy</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Expert care</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Proven techniques</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Quick relief</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="{% url 'dashboard:booking_form' %}?service=neck_shoulder_pain" class="btn btn-gym-green">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card pricing-card">
+                        <div class="pricing-header green">
+                            <div class="pricing-title">Reflexo Therapy</div>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">GHC</span> 250.00
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Traditional therapy</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Holistic healing</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Stress relief</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Natural treatment</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Improved circulation</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="{% url 'dashboard:booking_form' %}?service=reflexo_therapy" class="btn btn-gym-green">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card pricing-card">
+                        <div class="pricing-header teal">
+                            <div class="pricing-title">Lower Back & Shoulder</div>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">GHC</span> 300.00
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Dual area treatment</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Pain management</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Specialized care</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Long-lasting relief</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Professional service</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="{% url 'dashboard:booking_form' %}?service=lower_back_shoulder" class="btn btn-gym-green">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card pricing-card">
+                        <div class="pricing-header green">
+                            <div class="pricing-title">Deep Tissue Massage</div>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">GHC</span> 400.00
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Intensive therapy</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Muscle recovery</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Deep relaxation</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Professional service</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Extended session</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="{% url 'dashboard:booking_form' %}?service=deep_tissue_massage" class="btn btn-gym-green">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Executive Suite Package -->
+        <div class="mb-5">
+            <div class="card bg-light border-0 shadow-sm">
+                <div class="card-body p-4 text-center">
+                    <h3 class="text-gym-purple fw-bold mb-3">EXECUTIVE SUITE PACKAGE</h3>
+                    <h4 class="text-gym-green">Gym Registration</h4>
+                    <p class="display-6 fw-bold text-gym-purple mb-3">GHC 450.00</p>
+                    <p class="text-muted">Premium gym membership with exclusive benefits</p>
+                    <a href="{% url 'dashboard:booking_form' %}?service=gym_registration" class="btn btn-gym-purple btn-lg">Get Package</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Home Services -->
+        <div>
+            <h2 class="text-gym-purple text-center mb-4 fw-bold">Our Home Services</h2>
+            <div class="alert alert-info text-center mb-5">
+                <i class="bi bi-house-heart fs-4 me-2"></i>
+                <strong>We Come to You!</strong> All services available at your home or office for your convenience
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card pricing-card">
+                        <div class="pricing-header purple">
+                            <div class="pricing-title">Full Body Massage</div>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">GHC</span> 450.00
+                            </div>
+                            <small>Home Service</small>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> At your location</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Professional equipment</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Expert therapist</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Convenient service</li>
+                                <li><i class="bi bi-check-circle-fill"></i> 1 hour session</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="{% url 'dashboard:booking_form' %}?service=home_full_body_massage" class="btn btn-gym-purple">Book Home Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card pricing-card">
+                        <div class="pricing-header purple">
+                            <div class="pricing-title">Neck & Shoulder Pain</div>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">GHC</span> 350.00
+                            </div>
+                            <small>Home Service</small>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Home treatment</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Pain relief</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Flexible scheduling</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Professional care</li>
+                                <li><i class="bi bi-check-circle-fill"></i> No travel needed</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="{% url 'dashboard:booking_form' %}?service=home_neck_shoulder" class="btn btn-gym-purple">Book Home Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card pricing-card">
+                        <div class="pricing-header purple">
+                            <div class="pricing-title">Reflexo Therapy</div>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">GHC</span> 350.00
+                            </div>
+                            <small>Home Service</small>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Home therapy</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Holistic healing</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Relaxing experience</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Certified therapist</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Comfort of home</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="{% url 'dashboard:booking_form' %}?service=home_reflexo" class="btn btn-gym-purple">Book Home Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card pricing-card">
+                        <div class="pricing-header purple">
+                            <div class="pricing-title">Lower Back & Shoulder</div>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">GHC</span> 400.00
+                            </div>
+                            <small>Home Service</small>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Home treatment</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Dual area care</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Pain management</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Expert service</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Convenient scheduling</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="{% url 'dashboard:booking_form' %}?service=home_lower_back" class="btn btn-gym-purple">Book Home Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card pricing-card">
+                        <div class="pricing-header purple">
+                            <div class="pricing-title">Deep Tissue Massage</div>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">GHC</span> 500.00
+                            </div>
+                            <small>Home Service</small>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Home service</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Intensive therapy</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Muscle recovery</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Premium service</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Extended session</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="{% url 'dashboard:booking_form' %}?service=home_deep_tissue" class="btn btn-gym-purple">Book Home Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card pricing-card">
+                        <div class="pricing-header purple">
+                            <div class="pricing-title">Driving Fatigue</div>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">GHC</span> 500.00
+                            </div>
+                            <small>Home Service</small>
+                        </div>
+                        <div class="card-body">
+                            <ul class="pricing-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Specialized treatment</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Fatigue relief</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Muscle relaxation</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Recovery therapy</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Post-driving care</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="{% url 'dashboard:booking_form' %}?service=driving_fatigue" class="btn btn-gym-purple">Book Home Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-gym-green text-white">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-3">Ready to Get Started?</h2>
+        <p class="lead mb-4">Register now to book any of our services</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="tel:0288251997" class="btn btn-gym-orange btn-lg">
+                <i class="bi bi-telephone me-2"></i>Call: 0288251997
+            </a>
+            <a href="tel:0244236973" class="btn btn-gym-orange btn-lg">
+                <i class="bi bi-telephone me-2"></i>Call: 0244236973
+            </a>
+            <a href="{% url 'accounts:register' %}" class="btn btn-outline-light btn-lg">
+                <i class="bi bi-person-plus me-2"></i>Register Now
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

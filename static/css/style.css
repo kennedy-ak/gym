@@ -1,0 +1,409 @@
+/* Green Street Gym Color Palette */
+:root {
+    --gym-green: #4a7c40;
+    --gym-green-dark: #3a6230;
+    --gym-green-light: #5a9c50;
+    --gym-orange: #c86a2b;
+    --gym-orange-dark: #a85515;
+    --gym-brown: #6b4423;
+    --gym-purple: #8b5a9d;
+    --gym-purple-dark: #6b3a7d;
+    --gym-purple-light: #ab7abd;
+    --gym-light-bg: #f8f9fa;
+    --gym-teal: #4a8c8c;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navbar Styles */
+.bg-gym-green {
+    background-color: var(--gym-green) !important;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--gym-orange);
+}
+
+/* Button Styles */
+.btn-gym-orange {
+    background-color: var(--gym-orange);
+    border-color: var(--gym-orange);
+    transition: all 0.3s ease;
+}
+
+.btn-gym-orange:hover {
+    background-color: var(--gym-orange-dark);
+    border-color: var(--gym-orange-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-gym-green {
+    background-color: var(--gym-green);
+    border-color: var(--gym-green);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-gym-green:hover {
+    background-color: var(--gym-green-dark);
+    border-color: var(--gym-green-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Text Colors */
+.text-gym-green {
+    color: var(--gym-green) !important;
+}
+
+.text-gym-orange {
+    color: var(--gym-orange) !important;
+}
+
+.text-gym-purple {
+    color: var(--gym-purple) !important;
+}
+
+.text-gym-brown {
+    color: var(--gym-brown) !important;
+}
+
+/* Background Colors */
+.bg-gym-purple {
+    background-color: var(--gym-purple) !important;
+}
+
+.bg-gym-brown {
+    background-color: var(--gym-brown) !important;
+}
+
+.bg-gym-teal {
+    background-color: var(--gym-teal) !important;
+}
+
+/* Button Styles - Purple */
+.btn-gym-purple {
+    background-color: var(--gym-purple);
+    border-color: var(--gym-purple);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-gym-purple:hover {
+    background-color: var(--gym-purple-dark);
+    border-color: var(--gym-purple-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--gym-green) 0%, var(--gym-green-dark) 100%);
+    color: white;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,101.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+    background-size: cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.card-header {
+    background-color: var(--gym-green);
+    color: white;
+    border-radius: 12px 12px 0 0 !important;
+    font-weight: 600;
+}
+
+/* Service Cards */
+.service-card {
+    background: white;
+    border-left: 4px solid var(--gym-orange);
+    margin-bottom: 20px;
+}
+
+.service-card:nth-child(3n+1) {
+    border-left-color: var(--gym-orange);
+}
+
+.service-card:nth-child(3n+2) {
+    border-left-color: var(--gym-purple);
+}
+
+.service-card:nth-child(3n+3) {
+    border-left-color: var(--gym-teal);
+}
+
+.service-card .card-title {
+    color: var(--gym-green);
+    font-weight: 600;
+}
+
+/* Health Tip Card */
+.health-tip-card {
+    background: linear-gradient(135deg, var(--gym-green-light) 0%, var(--gym-green) 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.health-tip-category {
+    display: inline-block;
+    background: var(--gym-orange);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: var(--gym-green);
+    box-shadow: 0 0 0 0.2rem rgba(74, 124, 64, 0.25);
+}
+
+.form-label {
+    color: var(--gym-green);
+    font-weight: 500;
+}
+
+/* Dashboard Styles */
+.dashboard-stat-card {
+    background: linear-gradient(135deg, var(--gym-green) 0%, var(--gym-green-dark) 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+.dashboard-stat-card .stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dashboard-stat-card .stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Blog Styles */
+.blog-card {
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.blog-meta {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer a {
+    color: var(--gym-green-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--gym-orange);
+}
+
+/* Alerts */
+.alert-success {
+    background-color: rgba(74, 124, 64, 0.1);
+    border-color: var(--gym-green);
+    color: var(--gym-green-dark);
+}
+
+.alert-warning {
+    background-color: rgba(200, 106, 43, 0.1);
+    border-color: var(--gym-orange);
+    color: var(--gym-orange-dark);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .dashboard-stat-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Loading Spinner */
+.spinner-gym {
+    border: 3px solid var(--gym-green-light);
+    border-top: 3px solid var(--gym-orange);
+}
+
+/* Pricing Styles */
+.pricing-card {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card.featured {
+    border-color: var(--gym-purple);
+    transform: scale(1.05);
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.pricing-header {
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.pricing-header.green {
+    background: linear-gradient(135deg, var(--gym-green) 0%, var(--gym-green-dark) 100%);
+}
+
+.pricing-header.purple {
+    background: linear-gradient(135deg, var(--gym-purple) 0%, var(--gym-purple-dark) 100%);
+}
+
+.pricing-header.teal {
+    background: linear-gradient(135deg, var(--gym-teal) 0%, #3a6c6c 100%);
+}
+
+.pricing-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pricing-amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.pricing-currency {
+    font-size: 1.2rem;
+    font-weight: normal;
+    opacity: 0.9;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.pricing-features li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-features i {
+    margin-right: 10px;
+    color: var(--gym-green);
+}
+
+.featured-badge {
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background: var(--gym-orange);
+    color: white;
+    padding: 5px 40px;
+    transform: rotate(45deg);
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}

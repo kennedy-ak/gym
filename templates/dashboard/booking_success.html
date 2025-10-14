@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Booking Submitted - Green Street Gym{% endblock %}
+
+{% block content %}
+<!-- Success Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card shadow-sm text-center">
+                    <div class="card-body p-5">
+                        <!-- Success Icon -->
+                        <div class="mb-4">
+                            <i class="bi bi-check-circle-fill text-success" style="font-size: 5rem;"></i>
+                        </div>
+
+                        <!-- Success Message -->
+                        <h2 class="text-gym-green fw-bold mb-3">Booking Request Submitted!</h2>
+                        <p class="lead mb-4">Thank you for choosing Green Street Gym</p>
+
+                        <!-- Information -->
+                        <div class="alert alert-info text-start mb-4">
+                            <h5 class="fw-bold mb-3">
+                                <i class="bi bi-info-circle me-2"></i>What Happens Next?
+                            </h5>
+                            <ol class="mb-0">
+                                <li class="mb-2">Our admin team has received your booking request</li>
+                                <li class="mb-2">We will review your details and contact you within 24 hours</li>
+                                <li class="mb-2">We'll confirm your appointment and discuss any specific requirements</li>
+                                <li>You'll receive all the necessary details via phone or email</li>
+                            </ol>
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="card bg-light border-0 mb-4">
+                            <div class="card-body">
+                                <h6 class="fw-bold mb-3">Need to reach us urgently?</h6>
+                                <div class="d-flex gap-2 justify-content-center flex-wrap">
+                                    <a href="tel:0288251997" class="btn btn-gym-green">
+                                        <i class="bi bi-telephone me-2"></i>0288251997
+                                    </a>
+                                    <a href="tel:0244236973" class="btn btn-gym-green">
+                                        <i class="bi bi-telephone me-2"></i>0244236973
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="d-grid gap-2">
+                            <a href="{% url 'home' %}" class="btn btn-gym-purple">
+                                <i class="bi bi-house me-2"></i>Back to Home
+                            </a>
+                            <a href="{% url 'pricing' %}" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-left me-2"></i>View All Services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

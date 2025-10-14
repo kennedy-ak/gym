@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(env/Scripts/python.exe -c \"f = open(''templates/home.html'', ''r''); lines = f.readlines(); f.close(); f = open(''templates/home.html'', ''w''); f.writelines(lines[:356]); f.close(); print(''File truncated successfully'')\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
