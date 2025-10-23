@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us - Fitness Gym{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section bg-dark text-white py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4">Welcome to Fitness Gym</h1>
+                <p class="lead">Your Premier Fitness Destination Since 2010</p>
+                <p>We are committed to helping you achieve your fitness goals through expert guidance, state-of-the-art facilities, and a supportive community.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vision & Values Section -->
+<section class="vision-values-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Vision & Values</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="value-card text-center">
+                    <i class="fas fa-heart mb-3"></i>
+                    <h3>Passion</h3>
+                    <p>We're passionate about fitness and helping our members achieve their goals.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="value-card text-center">
+                    <i class="fas fa-users mb-3"></i>
+                    <h3>Community</h3>
+                    <p>Building a supportive and motivating fitness community for all members.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="value-card text-center">
+                    <i class="fas fa-star mb-3"></i>
+                    <h3>Excellence</h3>
+                    <p>Commitment to providing top-quality equipment and professional guidance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Facilities Section -->
+<section class="facilities-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Facilities</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="facility-card">
+                    <img src="{% static 'images/gym-floor.jpg' %}" alt="Main Gym Floor" class="img-fluid" loading="lazy">
+                    <h3>Main Gym Floor</h3>
+                    <p>State-of-the-art equipment for strength and cardio training.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="facility-card">
+                    <img src="{% static 'images/studio.jpg' %}" alt="Group Exercise Studio" class="img-fluid" loading="lazy">
+                    <h3>Group Exercise Studio</h3>
+                    <p>Spacious studio for various group fitness classes.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="facility-card">
+                    <img src="{% static 'images/pool.jpg' %}" alt="Swimming Pool" class="img-fluid" loading="lazy">
+                    <h3>Swimming Pool</h3>
+                    <p>Indoor heated pool for aquatic exercises and swimming.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="team-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Meet Our Team</h2>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="team-card">
+                    <img src="{% static 'images/trainer-1.jpg' %}" alt="John Doe" class="img-fluid" loading="lazy">
+                    <h3>John Doe</h3>
+                    <p class="position">Head Trainer</p>
+                    <p>Certified fitness expert with 10+ years of experience.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-card">
+                    <img src="{% static 'images/trainer-2.jpg' %}" alt="Jane Smith" class="img-fluid" loading="lazy">
+                    <h3>Jane Smith</h3>
+                    <p class="position">Yoga Instructor</p>
+                    <p>Specialized in mindfulness and body conditioning.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-card">
+                    <img src="{% static 'images/trainer-3.jpg' %}" alt="Mike Johnson" class="img-fluid" loading="lazy">
+                    <h3>Mike Johnson</h3>
+                    <p class="position">Nutrition Specialist</p>
+                    <p>Expert in creating personalized meal plans.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-card">
+                    <img src="{% static 'images/trainer-4.jpg' %}" alt="Sarah Williams" class="img-fluid" loading="lazy">
+                    <h3>Sarah Williams</h3>
+                    <p class="position">Personal Trainer</p>
+                    <p>Specialized in strength and conditioning.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5 bg-dark text-white text-center">
+    <div class="container">
+        <h2 class="mb-4">Ready to Start Your Fitness Journey?</h2>
+        <p class="lead mb-4">Join our community today and transform your life!</p>
+        <a href="{% url 'register' %}" class="btn btn-primary btn-lg">Start Your Free Trial</a>
+    </div>
+</section>
+{% endblock %}
