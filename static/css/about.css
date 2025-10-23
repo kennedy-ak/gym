@@ -1,0 +1,134 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/about-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+/* Vision & Values Section */
+.value-card {
+    padding: 2rem;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card i {
+    font-size: 2.5rem;
+    color: var(--gym-green);
+}
+
+/* Facilities Section */
+.facility-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.facility-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.facility-card h3 {
+    padding: 1rem;
+    margin: 0;
+    color: var(--gym-purple);
+}
+
+.facility-card p {
+    padding: 0 1rem 1rem;
+    margin: 0;
+}
+
+/* Team Section */
+.team-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    margin: 1rem 0 0.5rem;
+    color: var(--gym-purple);
+}
+
+.team-card .position {
+    color: var(--gym-orange);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    padding: 0 1rem 1rem;
+    margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-section .btn-primary {
+    background-color: var(--gym-green);
+    border-color: var(--gym-green);
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.cta-section .btn-primary:hover {
+    background-color: var(--gym-orange);
+    border-color: var(--gym-orange);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .facility-card img,
+    .team-card img {
+        height: 200px;
+    }
+    
+    .value-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .team-card {
+        margin-bottom: 20px;
+    }
+}
