@@ -18,11 +18,12 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import HomeView, PricingView
+from .views import HomeView, PricingView, AboutView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomeView.as_view(), name='home'),
+    path('about/', AboutView.as_view(), name='about'),
     path('pricing/', PricingView.as_view(), name='pricing'),
     path('accounts/', include('accounts.urls')),
     path('dashboard/', include('dashboard.urls')),

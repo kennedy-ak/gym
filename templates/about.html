@@ -1,0 +1,459 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us - Green Street Gym{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container hero-content">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center fade-in-up">
+                <h1 class="display-3 fw-bold mb-4">About Green Street Gym</h1>
+                <p class="lead mb-4">Empowering individuals to achieve their fitness goals through personalized training, expert guidance, and a supportive community.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Company Overview Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="text-gym-green fw-bold mb-4">Our Story</h2>
+                <p class="lead text-muted mb-3">Where Fitness Meets Wellness</p>
+                <p>Founded with a passion for health and wellness, Green Street Gym has become a cornerstone of fitness in our community. Located at Pantang Hospital Second Gate, we set out to create more than just a gym—we envisioned a comprehensive health and wellness center where everyone, from beginners to advanced athletes, could find their path to better health.</p>
+                <p>What sets us apart is our unique combination of modern fitness facilities with traditional therapeutic services. We understand that true wellness comes from a holistic approach, which is why we offer everything from state-of-the-art gym equipment to specialized rehabilitation and massage therapy.</p>
+                <p class="mb-0">Today, we're proud to serve over 500 satisfied clients, helping them achieve their fitness goals and live healthier, more active lives.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="card bg-gym-green text-white border-0 shadow-lg">
+                    <div class="card-body p-5">
+                        <div class="text-center mb-4">
+                            <i class="bi bi-bullseye fs-1 mb-3"></i>
+                            <h4 class="fw-bold">Our Mission</h4>
+                        </div>
+                        <p class="text-center fs-5 mb-0">Empowering individuals to achieve their fitness goals through personalized training, expert guidance, and a supportive community. We're committed to making quality health and wellness services accessible to everyone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vision & Values Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="text-gym-purple fw-bold">Our Vision & Values</h2>
+            <p class="text-muted">The principles that guide everything we do</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="rounded-circle bg-gym-green text-white d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <i class="bi bi-heart-pulse fs-1"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title text-gym-green fw-bold">Health First</h5>
+                        <p class="card-text text-muted">Your health and safety are our top priorities. We promote sustainable fitness practices that support long-term wellness.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="rounded-circle bg-gym-orange text-white d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <i class="bi bi-arrow-repeat fs-1"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title text-gym-green fw-bold">Consistency</h5>
+                        <p class="card-text text-muted">Success comes from regular effort. We support you in building sustainable habits that last a lifetime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="rounded-circle bg-gym-purple text-white d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <i class="bi bi-trophy fs-1"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title text-gym-green fw-bold">Discipline</h5>
+                        <p class="card-text text-muted">We believe in the power of dedication and commitment. Our trainers help you stay focused on your goals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="rounded-circle bg-gym-teal text-white d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <i class="bi bi-people fs-1"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title text-gym-green fw-bold">Community</h5>
+                        <p class="card-text text-muted">We foster a supportive environment where everyone encourages each other to reach their full potential.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Facilities Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="text-gym-green fw-bold">Our Facilities</h2>
+            <p class="text-muted">State-of-the-art equipment and comfortable treatment spaces</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <div class="card-body p-4">
+                        <div class="mb-3 text-gym-orange">
+                            <i class="bi bi-dumbbell fs-1"></i>
+                        </div>
+                        <h5 class="card-title">Weight Room</h5>
+                        <p class="card-text text-muted">Fully equipped with free weights, barbells, dumbbells, and benches for all your strength training needs. From beginners to advanced lifters, we have equipment for every level.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <div class="card-body p-4">
+                        <div class="mb-3 text-gym-purple">
+                            <i class="bi bi-speedometer2 fs-1"></i>
+                        </div>
+                        <h5 class="card-title">Cardio Zone</h5>
+                        <p class="card-text text-muted">Modern cardio machines including treadmills, ellipticals, and stationary bikes. Track your progress with built-in monitors and fitness tracking capabilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <div class="card-body p-4">
+                        <div class="mb-3 text-gym-teal">
+                            <i class="bi bi-arrow-left-right fs-1"></i>
+                        </div>
+                        <h5 class="card-title">Functional Training Area</h5>
+                        <p class="card-text text-muted">Dedicated space for functional fitness, circuit training, and bodyweight exercises. Perfect for dynamic workouts and group training sessions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <div class="card-body p-4">
+                        <div class="mb-3 text-gym-brown">
+                            <i class="bi bi-flower3 fs-1"></i>
+                        </div>
+                        <h5 class="card-title">Massage & Therapy Rooms</h5>
+                        <p class="card-text text-muted">Private, comfortable treatment rooms for massage therapy, reflexology, and rehabilitation sessions. Designed for your comfort and relaxation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <div class="card-body p-4">
+                        <div class="mb-3 text-gym-orange">
+                            <i class="bi bi-droplet fs-1"></i>
+                        </div>
+                        <h5 class="card-title">Sauna</h5>
+                        <p class="card-text text-muted">Relax and recover in our sauna facilities. Perfect for post-workout recovery, muscle relaxation, and detoxification.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <div class="card-body p-4">
+                        <div class="mb-3 text-gym-purple">
+                            <i class="bi bi-person-workspace fs-1"></i>
+                        </div>
+                        <h5 class="card-title">Personal Training Spaces</h5>
+                        <p class="card-text text-muted">Dedicated areas for one-on-one training sessions with our certified personal trainers. Get personalized attention and customized workout plans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="text-gym-purple fw-bold">Meet Our Team</h2>
+            <p class="text-muted">Certified professionals dedicated to your success</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="rounded-circle bg-gym-green text-white d-inline-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="bi bi-person-circle fs-1"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title text-gym-green fw-bold">Head Trainer</h5>
+                        <p class="text-gym-orange fw-semibold mb-2">Lead Fitness Coach</p>
+                        <p class="card-text text-muted">Certified personal trainer with over 10 years of experience in strength training, conditioning, and nutrition coaching. Specializes in helping clients achieve sustainable fitness transformations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="rounded-circle bg-gym-purple text-white d-inline-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="bi bi-person-circle fs-1"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title text-gym-green fw-bold">Senior Therapist</h5>
+                        <p class="text-gym-orange fw-semibold mb-2">Massage & Rehabilitation Specialist</p>
+                        <p class="card-text text-muted">Licensed massage therapist and rehabilitation specialist. Expert in deep tissue massage, sports injury recovery, and pain management with 8+ years of experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="rounded-circle bg-gym-orange text-white d-inline-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="bi bi-person-circle fs-1"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title text-gym-green fw-bold">Wellness Coach</h5>
+                        <p class="text-gym-orange fw-semibold mb-2">Nutrition & Lifestyle Specialist</p>
+                        <p class="card-text text-muted">Certified nutritionist and wellness coach focused on holistic health approaches. Helps clients develop sustainable healthy habits and achieve their weight management goals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="rounded-circle bg-gym-teal text-white d-inline-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="bi bi-person-circle fs-1"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title text-gym-green fw-bold">Rehabilitation Specialist</h5>
+                        <p class="text-gym-orange fw-semibold mb-2">Stroke & Injury Recovery</p>
+                        <p class="card-text text-muted">Specialized in post-stroke rehabilitation and injury recovery programs. Works closely with clients to restore mobility and strength through evidence-based therapy methods.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="rounded-circle bg-gym-brown text-white d-inline-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="bi bi-person-circle fs-1"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title text-gym-green fw-bold">Reflexology Therapist</h5>
+                        <p class="text-gym-orange fw-semibold mb-2">Traditional Therapy Expert</p>
+                        <p class="card-text text-muted">Certified reflexology practitioner with extensive training in traditional healing methods. Specializes in pressure point therapy for stress relief and holistic wellness.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="rounded-circle bg-gym-purple text-white d-inline-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="bi bi-person-circle fs-1"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title text-gym-green fw-bold">Group Fitness Instructor</h5>
+                        <p class="text-gym-orange fw-semibold mb-2">Classes & Group Training</p>
+                        <p class="card-text text-muted">Dynamic and energetic instructor leading group fitness classes and boot camps. Creates motivating environments where clients push their limits and have fun.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="text-gym-green fw-bold">What Our Members Say</h2>
+            <p class="text-muted">Real stories from our satisfied clients</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                        </div>
+                        <p class="card-text text-muted fst-italic">"Green Street Gym changed my life! The trainers are knowledgeable, supportive, and genuinely care about your progress. I've lost 20kg and gained so much confidence."</p>
+                        <div class="mt-3">
+                            <p class="mb-0 fw-bold text-gym-green">Sarah M.</p>
+                            <small class="text-muted">Member since 2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                        </div>
+                        <p class="card-text text-muted fst-italic">"After my stroke, the rehabilitation team here helped me regain my strength and mobility. Their patience and expertise made all the difference in my recovery journey."</p>
+                        <div class="mt-3">
+                            <p class="mb-0 fw-bold text-gym-green">John K.</p>
+                            <small class="text-muted">Rehabilitation Client</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                            <i class="bi bi-star-fill text-gym-orange"></i>
+                        </div>
+                        <p class="card-text text-muted fst-italic">"The massage therapy services are incredible. After long work days, the deep tissue massage helps me recover and stay active. Best decision I've made for my health!"</p>
+                        <div class="mt-3">
+                            <p class="mb-0 fw-bold text-gym-green">Grace A.</p>
+                            <small class="text-muted">Therapy Client</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="py-5 bg-gym-purple text-white">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md-3">
+                <div class="p-3">
+                    <h2 class="display-4 fw-bold mb-2">500+</h2>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-3">
+                    <h2 class="display-4 fw-bold mb-2">10+</h2>
+                    <p class="mb-0">Expert Trainers</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-3">
+                    <h2 class="display-4 fw-bold mb-2">8+</h2>
+                    <p class="mb-0">Services Offered</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-3">
+                    <h2 class="display-4 fw-bold mb-2">5</h2>
+                    <p class="mb-0">Years of Excellence</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-gym-green text-white">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-3">Ready to Join Our Community?</h2>
+        <p class="lead mb-4">Start your fitness journey with Green Street Gym today. Book a free trial session and experience the difference!</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="{% url 'pricing' %}" class="btn btn-gym-orange btn-lg">
+                <i class="bi bi-tag me-2"></i>View Membership Plans
+            </a>
+            <a href="{% url 'accounts:register' %}" class="btn btn-outline-light btn-lg">
+                <i class="bi bi-person-plus me-2"></i>Book Free Trial
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Info Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h3 class="text-gym-green fw-bold mb-4">Visit Us Today</h3>
+                <div class="mb-3">
+                    <h5 class="text-gym-purple fw-bold mb-2">
+                        <i class="bi bi-geo-alt me-2"></i>Location
+                    </h5>
+                    <p class="text-muted mb-0">Pantang Hospital Second Gate</p>
+                </div>
+                <div class="mb-3">
+                    <h5 class="text-gym-purple fw-bold mb-2">
+                        <i class="bi bi-clock me-2"></i>Opening Hours
+                    </h5>
+                    <p class="text-muted mb-0">Monday - Sunday: 5am - 9am / 5pm - 9pm</p>
+                </div>
+                <div class="mb-3">
+                    <h5 class="text-gym-purple fw-bold mb-2">
+                        <i class="bi bi-telephone me-2"></i>Contact Numbers
+                    </h5>
+                    <p class="text-muted mb-1">0288251997</p>
+                    <p class="text-muted mb-0">0244236973</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card bg-light border-0 shadow">
+                    <div class="card-body p-5">
+                        <h4 class="text-gym-green fw-bold mb-4">Why Choose Us?</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-gym-orange me-2 fs-5"></i>
+                                <span class="text-muted">Certified and experienced trainers</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-gym-orange me-2 fs-5"></i>
+                                <span class="text-muted">State-of-the-art equipment and facilities</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-gym-orange me-2 fs-5"></i>
+                                <span class="text-muted">Comprehensive wellness services</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-gym-orange me-2 fs-5"></i>
+                                <span class="text-muted">Home and corporate services available</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-gym-orange me-2 fs-5"></i>
+                                <span class="text-muted">Flexible membership plans</span>
+                            </li>
+                            <li class="mb-0">
+                                <i class="bi bi-check-circle-fill text-gym-orange me-2 fs-5"></i>
+                                <span class="text-muted">Supportive community atmosphere</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
