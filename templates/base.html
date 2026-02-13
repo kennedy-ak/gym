@@ -33,6 +33,9 @@
                         <a class="nav-link" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About Us</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{% url 'pricing' %}">Pricing</a>
                     </li>
                     {% endif %}
@@ -96,10 +99,13 @@
                     <p class="text-white-50">5am - 9am / 5pm - 9pm</p>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <h5 class="text-gym-green fw-bold">Contact Us</h5>
-                    <p class="mb-1 text-white"><i class="bi bi-telephone me-2"></i> 0288251997</p>
-                    <p class="mb-1 text-white"><i class="bi bi-telephone me-2"></i> 0244236973</p>
-                    <p class="mb-1 text-white"><i class="bi bi-geo-alt me-2"></i> Pantang Hospital Second Gate</p>
+                    <h5 class="text-gym-green fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><a href="{% url 'home' %}" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="{% url 'about' %}" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="{% url 'pricing' %}" class="text-white-50 text-decoration-none">Pricing</a></li>
+                        <li class="mb-2"><a href="{% url 'blog:list' %}" class="text-white-50 text-decoration-none">Blog</a></li>
+                    </ul>
                 </div>
                 <div class="col-md-4 mb-3">
                     <h5 class="text-gym-green fw-bold">Our Services</h5>
