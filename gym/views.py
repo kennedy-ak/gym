@@ -20,3 +20,8 @@ class PricingView(TemplateView):
         if request.user.is_authenticated:
             return redirect('dashboard:home')
         return super().get(request, *args, **kwargs)
+
+
+class TermsView(TemplateView):
+    """Terms and Conditions page view"""
+    template_name = 'terms.html'
